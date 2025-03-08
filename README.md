@@ -1,13 +1,13 @@
-#Node.js Hello World App Deployment on AWS (ECR + ECS Fargate) using Terraform & GitHub Actions **
+**Node.js Hello World App Deployment on AWS (ECR + ECS Fargate) using Terraform & GitHub Actions**
 
 
-Overview
+**Overview**
 
 This project demonstrates how to deploy a simple Node.js Hello World application on 
 AWS ECS Fargate using Terraform for infrastructure provisioning and GitHub Actions for CI/CD automation. 
 The app is containerized and stored in AWS ECR before being deployed to AWS ECS Fargate.
 
-Architecture
+**Architecture**
 
 AWS Elastic Container Registry (ECR): Stores the container image.
 
@@ -31,7 +31,7 @@ Docker installed (docker -v)
 
 GitHub Repository with GitHub Actions enabled
 
-Setup and Deployment
+**Setup and Deployment**
 
 1️⃣ Clone the Repository
 
