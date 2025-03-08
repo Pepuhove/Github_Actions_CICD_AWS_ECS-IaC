@@ -4,4 +4,5 @@ terraform {
     key    = "ecs/hello-world-app/terraform.tfstate"
     region = "us-east-1"
   }
+  
 }
