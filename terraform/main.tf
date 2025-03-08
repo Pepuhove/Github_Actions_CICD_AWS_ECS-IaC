@@ -55,7 +55,7 @@ resource "aws_ecs_service" "service" {
   network_configuration {
     subnets         = var.subnet_ids
     assign_public_ip = true
-    security_groups = ["sg-098d8e07dc8df4f85"]
+    security_groups = ["sg-0c184566d89eb39d4"]
   }
   load_balancer {
     target_group_arn = aws_lb_target_group.app_target_group.arn
@@ -68,7 +68,7 @@ resource "aws_lb" "app_lb" {
   name               = "${var.app_name}-lb"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = ["sg-098d8e07dc8df4f85"]
+  security_groups    = ["sg-0c184566d89eb39d4"]
   subnets            = var.subnet_ids
 }
 
