@@ -13,7 +13,7 @@ variable "ecs_cluster_name" {
 variable "app_name" {  # Fixed variable name (underscore instead of hyphen)
   description = "The name of the application"
   type        = string
-  default     = "my_app"
+  default     = "my-app"
 }
 
 variable "vpc_id" {
