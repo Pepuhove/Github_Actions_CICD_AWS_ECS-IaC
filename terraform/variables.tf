@@ -8,7 +8,7 @@ variable "ecs_cluster_name" {
   type        = string
   default = "my_app_cluster"
 }
-variable "app_name" {
+variable "app-name" {
   description = "The name of the application"
   type        = string
   default = "my_app"
