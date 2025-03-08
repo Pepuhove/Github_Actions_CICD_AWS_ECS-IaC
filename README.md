@@ -1,4 +1,4 @@
-#########**Node.js Hello World App Deployment on AWS (ECR + ECS Fargate) using Terraform & GitHub Actions**
+###################**Node.js Hello World App Deployment on AWS (ECR + ECS Fargate) using Terraform & GitHub Actions**##################
 
 
 **Overview**
