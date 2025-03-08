@@ -1,4 +1,4 @@
-**Node.js Hello World App Deployment on AWS (ECR + ECS Fargate) using Terraform & GitHub Actions**
+#**Node.js Hello World App Deployment on AWS (ECR + ECS Fargate) using Terraform & GitHub Actions**
 
 
 **Overview**
@@ -43,6 +43,7 @@ cd nodejs-aws-fargate
 Manually run these steps initially:
 
 aws ecr create-repository --repository-name hello-world-app
+
 $(aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com)
 docker build -t hello-world-app .
 docker tag hello-world-app:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/hello-world-app:latest
@@ -77,7 +78,7 @@ ECR_REGISTRY (<AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com)
 
 ECR_REPOSITORY (hello-world-app)
 
-GitHub Actions workflow (.github/workflows/deploy.yml):
+**GitHub Actions workflow (.github/workflows/deploy.yml):**
 
 name: Deploy to AWS ECS
 
@@ -126,7 +127,7 @@ To delete all AWS resources:
 
 terraform destroy -auto-approve
 
-Technologies Used
+**Technologies Used**
 
 AWS ECS (Fargate)
 
