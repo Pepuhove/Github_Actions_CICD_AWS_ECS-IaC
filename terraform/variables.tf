@@ -19,7 +19,7 @@ variable "app_name" {  # Fixed variable name (underscore instead of hyphen)
 variable "vpc_id" {
   description = "The ID of the VPC where resources will be created"
   type        = string
-  default     = "vpc-id"
+  default     = "vpc-08cefe9f810137d5a"
 }
 
 variable "subnet_ids" {
